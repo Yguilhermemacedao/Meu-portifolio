@@ -1,0 +1,146 @@
+// Cores 
+$azul:#1649ff;
+$preto:#1e1e1e;
+$cinza:#292929;
+$branco:#efefef;
+$fonte-principal:'Poppins', sans-serif;
+
+*{
+    text-decoration: none;
+}
+
+body{
+    background-color: $branco;
+    overflow-x: hidden;
+    header{
+        position: fixed;
+        background-color: $branco;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 1px 1px 5px #9292926c;
+        .logo{    
+            img{
+                height: 64px;
+                width: 64px;
+            }
+        }
+
+        nav{
+            margin-right: 2rem;
+
+            #menu{
+                display: none;
+                height: 54px;
+                width: 54px;
+                padding-top: 5px;
+                font-size: 50px;
+                margin-right: 14px;
+                text-align: center;
+                cursor: pointer;
+                border: none;
+                color: #808080c5;
+            }
+
+            .menu-lista{
+                background-color: $branco;
+                padding: 15px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                gap: 30px;
+               
+                // height: 200px;
+                // width: 100%;
+                // background-color: $branco;
+                // position: fixed;
+                // top: 5rem;
+                // right:0;
+                // left: 0;
+                // padding: 15px;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: space-around;
+                // align-items: center;
+                // box-shadow: 3px 7px 10px #1e1e1e56;
+
+                li{
+                    
+                    a{
+                        font-family: $fonte-principal;
+                        font-size: 20px;
+                        color: $cinza;
+                        
+                        &:hover{
+                            border-bottom: 3px solid $azul;
+                            transform: scale(1.1);
+                            font-weight: 600;
+                            transition-duration: .3s ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        height: auto;
+
+        #home{
+            height: 80vh;
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            overflow-x: hidden;
+
+            .img-perfil{
+                height: 400px;
+                width: 400px;
+                border-radius: 40% 60% 41% 59% / 48% 51% 49% 52%;
+                background: url(../img/IMG-20231215-WA0111.jpg);
+                background-position: top center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                box-shadow: 3px 3px 20px #1e1e1e71;
+            }
+
+            h1{
+                font-size: 28px;
+                font-family: $fonte-principal;
+                font-weight: 600;
+            }
+
+            p{
+                text-transform: uppercase;
+                font-family: $fonte-principal;
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: 2px;
+                color: $azul;
+            }
+        }
+
+        #sobre{
+            height: 100vh;
+            padding: 10px;
+
+            h2{
+                max-width: 180px;
+                text-align: center;
+                margin: 20px;
+                font-size: 30px;
+                font-weight: 600;
+                font-family: $fonte-principal;
+                border-bottom: 2px solid $azul;
+            }
+        }
+    }
+}

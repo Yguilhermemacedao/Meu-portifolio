@@ -1,0 +1,110 @@
+* {
+  text-decoration: none;
+}
+
+body {
+  background-color: #efefef;
+  overflow-x: hidden;
+}
+body header {
+  position: fixed;
+  background-color: #efefef;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 5px rgba(146, 146, 146, 0.4235294118);
+}
+body header .logo img {
+  height: 64px;
+  width: 64px;
+}
+body header nav {
+  margin-right: 2rem;
+}
+body header nav #menu {
+  display: none;
+  height: 54px;
+  width: 54px;
+  padding-top: 5px;
+  font-size: 50px;
+  margin-right: 14px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  color: rgba(128, 128, 128, 0.7725490196);
+}
+body header nav .menu-lista {
+  background-color: #efefef;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+body header nav .menu-lista li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #292929;
+}
+body header nav .menu-lista li a:hover {
+  border-bottom: 3px solid #1649ff;
+  transform: scale(1.1);
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+body main {
+  height: auto;
+}
+body main #home {
+  height: 80vh;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  overflow-x: hidden;
+}
+body main #home .img-perfil {
+  height: 400px;
+  width: 400px;
+  border-radius: 40% 60% 41% 59%/48% 51% 49% 52%;
+  background: url(../img/IMG-20231215-WA0111.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 3px 3px 20px rgba(30, 30, 30, 0.4431372549);
+}
+body main #home h1 {
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+body main #home p {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #1649ff;
+}
+body main #sobre {
+  height: 100vh;
+  padding: 10px;
+}
+body main #sobre h2 {
+  max-width: 180px;
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 2px solid #1649ff;
+}
+
+/*# sourceMappingURL=style.css.map */
