@@ -18,8 +18,8 @@ body header {
   box-shadow: 1px 1px 5px rgba(146, 146, 146, 0.4235294118);
 }
 body header .logo img {
-  height: 64px;
-  width: 64px;
+  height: 46px;
+  width: 177px;
 }
 body header nav {
   margin-right: 2rem;
@@ -60,12 +60,12 @@ body main {
   height: auto;
 }
 body main #home {
-  height: 80vh;
+  height: 100vh;
   width: 100%;
-  padding: 10px;
+  padding-top: 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   gap: 30px;
   overflow-x: hidden;
@@ -80,12 +80,12 @@ body main #home .img-perfil {
   background-size: cover;
   box-shadow: 3px 3px 20px rgba(30, 30, 30, 0.4431372549);
 }
-body main #home h1 {
+body main #home .text-home h1 {
   font-size: 28px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
-body main #home p {
+body main #home .text-home p {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
