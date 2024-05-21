@@ -1,9 +1,17 @@
 // Menu Hambúrguer
 function menuOpen(){
-    let menu = document.querySelector('.menu-lista')
-    if(menu.style.display === 'none'){
-        menu.style.display = 'flex'
-    }else{
-        menu.style.display = 'none'
+    // Criando variáveis para os nossos elementos
+    let menu = document.querySelector('#menu')
+    let btnClose = document.getElementById('close-menu')
+    let fade = document.querySelector('.fade')
+    if(menu.classList.contains('open')){
+        menu.classList.remove('open')
+    }
+    else if(btnClose.addEventListener('click', () =>{
+        menu.classList.remove('open')
+    }));
+    else{
+        menu.classList.add('open')
+
     }
 }

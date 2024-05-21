@@ -6,7 +6,6 @@
     <title>Portifólio</title>
     <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/reset.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,40 +14,46 @@
 <body>
     <header>
         <a href="#">
-            <div class="logo">
-                <img src="assets/img/logo-principal.png" alt="Logo do portifólio">
-            </div>
+            <div class="logo"></div>
         </a>
-
-        <nav>
-            <button id="menu" onclick="menuOpen()"><i class='bx bx-menu'></i></button>
+        
+        <button id="btn-menu" onclick="menuOpen()"><i class='bx bx-menu'></i></button>
+        <nav id="menu">
+            <button id="close-menu" onclick="closeMenu()"><i class='bx bx-x'></i></button>
             <ul class="menu-lista">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Inicio</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#sobre" class="menu-link">Sobre</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#projetos" class="menu-link">Projetos</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#contato" class="menu-link" id="btn-contato">Contato</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="home">
-            <div class="img-perfil">
-            </div>
-            <dic class="text-home">
+            <div class="img-perfil"></div>
+            
                 <h1>Olá sou Guilherme <strong style="color: #1649ff;">Macedo</strong></h1>
                 <p>Desenvolvedor Front End</p>
-            </dic>
+    
         </section>
         <section id="sobre">
             <h2>Sobre mim</h2>
-            <p>Saudações me chamo Guilherme e este é o meu portifólio, onde mostrarei todos os meus projetos e conhecimentos que realizei ao longo do meu processo de evolução em Front End.</p>
+            <p>Saudações me chamo Guilherme e este é o meu portifólio, onde mostrarei todos os meus projetos e conhecimentos que realizei ao longo do meu processo de evolução em  <strong style="color: #1649ff;">Desenvolvimento Front End</strong>.</p>
 
             <div class="btn-social-media">
                 <a href="#">
-                    <button class="btn-github">GitHub <i class='bx bxl-github' ></i></button>
+                    <button class="btn-github" style="background-color: #000;">GitHub <i class='bx bxl-github' ></i></button>
                 </a>
                 <a href="#">
-                    <button class="btn-linkedin">Linkedin <i class='bx bxl-linkedin-square' ></i></button>
+                    <button class="btn-linkedin" style="background-color: #1649ff;">Linkedin <i class='bx bxl-linkedin-square' ></i></button>
                 </a>
             </div>
         </section>
@@ -87,13 +92,13 @@
                 <ul>
                     <li class="projeto">
                         <img src="assets/img/land-toms.png" alt="Landing Page">
-                        <p></p>
+                        <p>A Tom´s Jazz Scholl é uma landing page criado em um curso que aprimorei minhas habilidades com HTML e CSS.</p>
                         <div class="buttons-projeto">
                             <button>
-                                <a href="">Ver projeto</a>
+                                <a href="#">Ver projeto</a>
                             </button>
                             <button>
-                                <a href="">Repositório</a>
+                                <a href="#">Repositório</a>
                             </button>
                         </div>
                     </li>
