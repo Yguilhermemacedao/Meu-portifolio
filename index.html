@@ -18,9 +18,16 @@
             <div class="logo"></div>
         </a>
         
-        <button id="btn-menu" onclick="menuOpen()"><i class='bx bx-menu'></i></button>
         <nav id="menu">
-            <button id="close-menu" onclick="closeMenu()"><i class='bx bx-x'></i></button>
+            <!-- Menu Hambúrguer -->
+            <input hidden="" class="check-icon" id="check-icon" name="check-icon" type="checkbox" onclick="openMenu()">
+            <label class="icon-menu" for="check-icon">
+                <div class="bar bar--1"></div>
+                <div class="bar bar--2"></div>
+                <div class="bar bar--3"></div>
+                <!-- FIM Menu Hambúrguer -->
+
+                <!-- Lista de itens de links -->
             <ul class="menu-lista">
                 <li class="menu-item">
                     <a href="#" class="menu-link">Inicio</a>
