@@ -3,138 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
-    <link rel="shortcut icon" href="./assets/img/iconee.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/estilo-global/style.css">
-    <link rel="stylesheet" href="assets/css/Cabecalho/cabecalho.css">
-    <link rel="shortcut icon" href="./assets/img/icone.png" type="image/x-icon">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Guilherme Macedo</title>
+    <link rel="shortcut icon" href="assets/img/iconee.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Folhas de Estilos -->
+    <link rel="stylesheet" href="assets/css/estilo-global/style.css">
+    <link rel="stylesheet" href="assets/css/Cabecalho/cabecalho.css">
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
-        <a href="#">
-            <div class="logo"></div>
-        </a>
-        
-        <nav id="menu">
-            <!-- Menu Hambúrguer -->
-            <div class="hamburger">
-                <input class="checkbox" type="checkbox" />
-                <svg fill="none" viewBox="0 0 50 50" height="50" width="50">
-                  <path
-                    class="lineTop line"
-                    stroke-linecap="round"
-                    stroke-width="4"
-                    stroke="black"
-                    d="M6 11L44 11"
-                  ></path>
-                  <path
-                    stroke-linecap="round"
-                    stroke-width="4"
-                    stroke="black"
-                    d="M6 24H43"
-                    class="lineMid line"
-                  ></path>
-                  <path
-                    stroke-linecap="round"
-                    stroke-width="4"
-                    stroke="black"
-                    d="M6 37H43"
-                    class="lineBottom line"
-                  ></path>
-                </svg>
-              </div>              
-                <!-- FIM Menu Hambúrguer -->
+        <!-- Logo -->
+        <img src="assets/img/logo-principal.png" alt="Logo do Portifólio de Guilherme" class="logo">
 
-                <!-- Lista de itens de links -->
+        <nav id="menu">
             <ul class="menu-lista">
-                <li class="menu-item">
-                    <a href="#" class="menu-link">Inicio</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#sobre" class="menu-link">Sobre</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#projetos" class="menu-link">Projetos</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#contato" class="menu-link" id="btn-contato">Contato</a>
-                </li>
+                <li class="menu-item"><a href="#home">Home</a></li>
+                <li class="menu-item"><a href="#sobre">Sobre</a></li>
+                <li class="menu-item"><a href="#projetos">Projetos</a></li>
+                <li class="menu-item"><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <!-- Seção Home -->
         <section id="home">
-            <!-- <div class="img-perfil"><img src="assets/img/IMG-20231215-WA0111-removebg-preview.png" alt="Foto de Guilherme Macedo"></div> -->
-            
-                <h1>Olá sou Guilherme <strong style="color: #1649ff;">Macedo</strong></h1>
+            <div class="image-destaque"><img src="" alt=""></div>
+            <div class="texto-home">
+                <h1>Olá eu sou o Guilherme <strong class="texto-azul">Macedo</strong></h1>
                 <p>Desenvolvedor Front End</p>
-    
+
+                <a href="#sobre"><button class="button-interacao">Explorar</button></a>
+            </div>
         </section>
+        <!-- Fim Seção Home -->
+        <!-- Seção Sobre -->
         <section id="sobre">
-            <h2>Sobre mim</h2>
-            <p>Saudações me chamo Guilherme e este é o meu portifólio, onde mostrarei todos os meus projetos e conhecimentos que realizei ao longo do meu processo de evolução em  <strong style="color: #1649ff;">Desenvolvimento Front End</strong>.</p>
-
-            <div class="btn-social-media">
-                <a href="#">
-                    <button class="btn-github" style="background-color: #000;">GitHub <i class='bx bxl-github' ></i></button>
-                </a>
-                <a href="#">
-                    <button class="btn-linkedin" style="background-color: #1649ff;">Linkedin <i class='bx bxl-linkedin-square' ></i></button>
-                </a>
+            <article>
+                <h1>Sobre mim</h1>
+                <p>Saudações me chamo Guilherme e este é o meu portifólio, onde mostrarei todos os meus projetos e conhecimentos que realizei ao longo do meu processo de evolução em minha carreira como Desenvolvedor Front End.</p>
+            </article>
+            <!-- Botões de acesso para redes sociais e documento -->
+            <div class="buttons-media">
+                <a href="#"><button>GitHub <i class='bx bxl-github'></i></button></a>
+                <a href="#"><button>Linkedin <i class='bx bxl-linkedin-square' ></i></button></a>
+                <a href="#"><button>Baixar CV <img src="assets/img/currículo.png" alt="ícone de currículo virtual"></button></a>
             </div>
         </section>
-
-        <section id="soft-skills">
-            <h2>Habilidades</h2>
-            <div class="skills">
-                <ul>
-                    <li>
-                        <i class='bx bxl-html5'></i>
-                    </li>
-                    <li>
-                        <i class='bx bxl-css3' ></i>
-                    </li>
-                    <li>
-                        <i class='bx bxl-javascript' ></i>
-                    </li>   
-                    <li>
-                        <i class='bx bxl-sass' ></i>
-                    </li>
-                    <li>
-                        <i class='bx bxl-typescript' ></i>
-                    </li>
-                </ul>
+        <!-- Fim Sobre -->
+        <!-- Habilidades/Soft Skills -->
+        <section id="skills">
+            <div class="habilidades">
+                <h2>Habilidades</h2>
+                <div class="skills-container">
+                    <ul>
+                        <li><i class='bx bxl-html5'></i></li>
+                        <li><i class='bx bxl-css3' ></i></li>
+                        <li><i class='bx bxl-javascript' ></i></li>
+                        <li><i class='bx bxl-sass' ></i></li>
+                        <li><i class='bx bxl-react' ></i></li>
+                        <li><i class='bx bxl-typescript' ></i></li>
+                        <li>Design UX/UI</li>
+                    </ul>
+                </div>
             </div>
         </section>
+        <!-- Fim Habilidades/Soft Skills -->
+        <!-- Projetos -->
         <section id="projetos">
-            <h2>Meus projetos</h2>
-
-            <div class="container-projetos">
-                <ul>
-                    <li class="projeto">
-                        <img src="assets/img/land-toms.png" alt="Landing Page">
-                        <p>A Tom´s Jazz Scholl é uma landing page criado em um curso que aprimorei minhas habilidades com HTML e CSS.</p>
-                        <div class="buttons-projeto">
-                            <button>
-                                <a href="#">Ver projeto</a>
-                            </button>
-                            <button>
-                                <a href="#">Repositório</a>
-                            </button>
+            <div class="container">
+                <h2>Projetos</h2>
+                <!-- Projetos Container -->
+                <div class="container-projetos">
+                    <!-- Landing Page PCR -->
+                    <div class="projeto">
+                        <img src="assets/img/pcr-page.png" alt="Landing Page de PCR Marcas e Patentes">
+                        <!-- Descrição do projeto -->
+                        <div class="descricao">
+                            <h3>PCR Marcas & Patentes</h3>
+                            <p>Com um design objetivo e sucinto, a página institucional da PCR Marcas & Patentes, traz o profissionalismo realista de seu trabalho. A página está adaptada para dispositivos móveis até desktop.</p>
+                            <p>Tecnologias:</p>
+                            <!-- Tecnologias -->
+                            <div class="tecnologias">
+                                <img src="assets/img/html-5.png" alt="Html ícone">
+                                <img src="assets/img/sass.png" alt="Sass ícone">
+                                <img src="assets/img/js.png" alt="Javascript ícone">
+                            </div>
+                            <!-- Botões de acesso para o projeto -->
+                            <div class="buttons-projeto">
+                                <a href="#"><button>Abrir projeto</button></a>
+                                <a href="#"><button>Abrir repositório</button></a>
+                            </div>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                <!-- Fim projeto 1 -->
+                <!-- Yupi Commerce -->
+                <div class="projeto">
+                    <img src="assets/img/yupi-page.png" alt="Landin Page da Yupi Commerce"/>
+                    <!-- Descrição do projeto -->
+                    <div class="descricao">
+                        <h3>Yupi Commerce</h3>
+                        <p>Esta landing page feita para a Yupi Commerce, com foco  em um plano de consultoria para marketplace. Projeto esta responsivo com um design agradável, intergrado API Rest.</p>
+                        <p>Tecnologias:</p>
+                        <div class="tecnologias">
+                            <img src="assets/img/html-5.png" alt="Html ícone">
+                            <img src="assets/img/css-3.png" alt="Css ícone">
+                        </div>
+                        <!-- Botões de acesso para o projeto -->
+                        <div class="buttons-projeto">
+                            <a href="#"><button>Abrir projeto</button></a>
+                            <a href="#"><button>Abrir repositório</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim Projeto 2-->
             </div>
+            <!-- Fim Container -->
         </section>
+        <!-- Fim Projetos -->
     </main>
-    <footer id="contato">
-        <p><strong style="color: #1649ff;">Transforme</strong> seus projetos em realidade, <strong style="color: #1649ff;">entre em contato</strong>!</p>
-        <button class="btn-contato">Entre em contato</button>
-        <span>Criado por <strong style="color: #1649ff;">Guilherme Macedo</strong></span>
+    <footer>
+        <!-- Formulário de contato -->
+        <div class="formulario">
+            <h2>Contate-me e Transforme Seus Projetos em Realidade!</h2>
+            <form action="#">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required maxlength="16" placeholder="Digite seu nome">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                </div>
+
+                <div>
+                    <label for="msg">Descrição</label>
+                    <textarea name="msg" id="msg" placeholder="Descreva seu projeto..."></textarea>
+                </div>
+
+                <input type="submit" value="Enviar" id="btn-enviar">
+            </form>
+        </div>
+        <!-- Fim Formulário -->
+        <!-- Redes Sociais -->
+        <div class="social-media">
+            <span class="tittle-footer"><img src="assets/img/iconee.png" alt="ícone de Guilherme Macedo"> Acompanhe minhas redes sociais</span>
+            <div class="container-social-media">
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            </div>
+        </div>
+        <p>Design e página criado por Guilherme <strong class="texto-azul">Macedo</strong></p>
     </footer>
     <script src="assets/js/script.js"></script>
 </body>
