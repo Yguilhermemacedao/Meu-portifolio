@@ -11,27 +11,37 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Folhas de Estilos -->
     <link rel="stylesheet" href="assets/css/estilo-global/style.css">
-    <link rel="stylesheet" href="assets/css/Cabecalho/cabecalho.css">
+    <!-- Estilização do Cabecalho -->
+    <link rel="stylesheet" href="assets/css/Header/cabecalho.css">
+    <!-- Estilização do conteúdo principal -->
+     <link rel="stylesheet" href="assets/css/Main/main.css">
 </head>
 <body>
     <!-- Cabeçalho -->
     <header>
         <!-- Logo -->
-        <img src="assets/img/logo-principal.png" alt="Logo do Portifólio de Guilherme" class="logo">
+        <div class="logo"></div>
 
         <nav id="menu">
+            <!-- Menu hambúrguer -->
+            <div class="burger-icon" onclick="openMenu()">
+                <label class="burger" for="burger">
+                  <input class="line" type="checkbox" id="burger"/>
+                </label>
+              </div>
+            <!-- Fim Menu Hambúrguer -->
             <ul class="menu-lista">
-                <li class="menu-item"><a href="#home">Home</a></li>
-                <li class="menu-item"><a href="#sobre">Sobre</a></li>
-                <li class="menu-item"><a href="#projetos">Projetos</a></li>
-                <li class="menu-item"><a href="#contato">Contato</a></li>
+                <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                <li class="menu-item"><a href="#sobre" class="menu-link">Sobre</a></li>
+                <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <!-- Seção Home -->
         <section id="home">
-            <div class="image-destaque"><img src="" alt=""></div>
+            <div class="image-destaque"></div>
             <div class="texto-home">
                 <h1>Olá eu sou o Guilherme <strong class="texto-azul">Macedo</strong></h1>
                 <p>Desenvolvedor Front End</p>

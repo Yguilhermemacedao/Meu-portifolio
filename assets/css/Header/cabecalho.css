@@ -1,0 +1,179 @@
+/* Header */
+header{
+    background-color: #121212;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+
+/* Logo */
+header .logo{
+    background-color: #e8e8e8;
+    height: 64px;
+    width: 64px;
+    background: url(/assets/img/iconee.png) center center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+/* Fim Logo */
+
+/* Classe para abrir menu */
+.menu-open{
+    display: flex;
+    animation-name: abrir;
+    animation-duration: .4s;
+    transition: all .4s ease;
+    animation-timing-function: .4s;
+}
+
+/* Menu */
+#menu .menu-lista {
+    width: 100%;
+    height: 50vh;
+    padding: 10px;
+    display: none; /* Esconde o menu por padrão */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    background-color: #131313;
+    bottom: 0;
+}
+
+.menu-link {
+    font-size: 26px;
+    color: #969696;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-link::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #1649ff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-link:hover::after {
+    width: 100%;
+}
+
+.menu-link:hover {
+    color: #f4f4f4;
+    font-weight: 600;
+}
+
+@keyframes abrir {
+   
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+}
+
+
+/* Menu Hambúrguer */
+.burger {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+    transition: 300ms;
+    border-radius: 10px;
+  }
+  .burger input[type="checkbox"] {
+    appearance: none;
+    transition: 300ms;
+  }
+  
+  .burger::before,
+  .burger::after {
+    content: "";
+    transition: 300ms;
+    transform-origin: center center;
+  }
+  
+  .burger::before {
+    transform: translateY(8px);
+  }
+  .burger::after {
+    transform: translateY(-8px);
+  }
+  .burger .line,
+  .burger::before,
+  .burger::after {
+    width: 25px;
+    height: 2.1px;
+    display: block;
+    background-color: rgb(148, 148, 148);
+    border-radius: 5px;
+    position: absolute;
+  }
+  
+  .burger .line:checked {
+    width: 0;
+    transition-delay: 100ms;
+  }
+  .burger:has(.line:checked)::before {
+    animation: animation1 400ms ease-out 0s 1 both;
+  }
+  .burger:has(.line:checked)::after {
+    animation: animation2 400ms ease-out 0s 1 both;
+  }
+  
+  .burger:hover {
+    background: #aeaeae;
+    border-radius: 50%;
+  }
+  
+  .burger:hover .line,
+  .burger:hover::before,
+  .burger:hover::after {
+    background: #e8e8e8;
+  }
+  
+  .burger:active {
+    scale: 0.95;
+  }
+  @keyframes animation1 {
+    0% {
+      transform: translateY(8px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    100% {
+      transform: translateY(0px) rotate(45deg);
+    }
+  }
+  @keyframes animation2 {
+    0% {
+      transform: translateY(-8px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    100% {
+      transform: translateY(0px) rotate(-45deg);
+    }
+  }
+  
+/* Fim menu hambúrguer */

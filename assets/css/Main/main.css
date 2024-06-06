@@ -1,0 +1,96 @@
+/* Classe utilitária para texto */
+.texto-azul{
+    color: #1649ff;
+}
+
+/* Conteúdo principal */
+#home{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: #121212;
+    height: 90vh;
+}
+
+#home .image-destaque{
+    height: 300px;
+    width: 300px;
+    background: url(/assets/img/Guilherme.jpg) top center no-repeat;
+    background-size: cover;
+    border-radius: 61% 39% 48% 52% / 44% 53% 47% 56%;
+}
+
+.texto-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.texto-home h1{
+    color: #f4f4f4cb;
+    text-align: center;
+    font-size: 25px;
+}
+
+.texto-home p{
+    font-size: 22px;
+    color: #969696;
+    font-weight: 600;
+}
+
+.button-interacao{
+    width: 300px;
+    padding: 8px;
+    margin-top: 3rem;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #f4f4f4;
+    background-color: #1649ff;
+}
+/* Fim Home */
+
+#sobre{
+    height: 70vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212;
+}
+
+#sobre article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 5px;
+}
+
+#sobre article h1{
+    font-size: 37px;
+    color: #f4f4f4e8;
+    text-align: center;
+    position: relative;
+}
+
+#sobre article h1::after{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 1rem;
+    width: 60%;
+    height: 4px;
+    background-color: #1649ff;
+}
+
+#sobre article p{
+    color: #f4f4f494;
+    font-size: 18px;
+}
