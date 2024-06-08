@@ -3,6 +3,10 @@
     color: #1649ff;
 }
 
+body{
+    background-color: #121212;
+}
+
 /* Conteúdo principal */
 #home{
     padding: 20px;
@@ -43,10 +47,10 @@
 }
 
 .button-interacao{
-    width: 300px;
-    padding: 8px;
+    width: 470px;
+    padding: 12px;
     margin-top: 3rem;
-    font-size: 18px;
+    font-size: 22px;
     border: none;
     border-radius: 5px;
     font-weight: 600;
@@ -56,10 +60,11 @@
 /* Fim Home */
 
 #sobre{
-    height: 70vh;
+    height: 90vh;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     background-color: #121212;
 }
@@ -73,7 +78,7 @@
 }
 
 #sobre article h1{
-    font-size: 37px;
+    font-size: 40px;
     color: #f4f4f4e8;
     text-align: center;
     position: relative;
@@ -92,5 +97,213 @@
 
 #sobre article p{
     color: #f4f4f494;
+    font-size: 25px;
+}
+
+.buttons-media{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.buttons-media button{
+    width: 300px;
+    height: 50px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 5px;
+}
+
+.buttons-media button:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.btn-github{
+    border: none;
+    color: #f4f4f4;
+    background-color: #000;
+    transition: all .2s ease-in-out;
+    font-size: 23px;
+}
+
+.btn-linkedin{
+    background-color: #1649ff;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    font-size: 23px;
+    color: #f4f4f4;
+}
+
+.btn-cv{
+    background-color: #0b1c98;
+    font-size: 22px;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    color: #f4f4f4;
+}
+
+/* Seção Habilidades */
+
+#skills{
+    height: 40vh;
+    max-width: 100%;
+    padding: 10px;
+    color: #f4f4f4;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+
+#skills h2{
+    font-size: 44px;
+    color: #969696;
+}
+
+
+
+.skills-container ul{
+    height: 200px;
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 290px;
+    padding: 10px;
+}
+
+.gradient-text {
+    font-size: 28px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff008c, #feb47b);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.skills-container ul > li > i{
+    font-size: 48px;
+}
+
+.bxl-html5{
+    color: orangered;
+}
+
+.bxl-css3{
+    color: #1649ff;
+}
+
+.bxl-javascript{
+    color: yellow;
+}
+
+.bxl-sass{
+    color: #f87f93;
+}
+
+.bxl-react{
+    color: aqua;
+}
+
+.bxl-typescript{
+    color: #1649ff;
+}
+
+/* Fim Skills */
+/* Seção Projetos */
+#projetos{
+    height: 200vh;
+    max-width: 100%;
+    padding: 10px;
+    background-color: #121212;
+}
+
+.container h2{
+    font-size: 44px;
+    color: #9e9e9e;
+    text-align: center;
+}
+
+.container-projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.projeto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 55px;
+}
+
+.img-projeto{
+    height: auto;
+    width:460px;
+}
+
+.descricao{
+    padding: 13px;
+    margin-top: 17px;
+}
+
+.descricao h3{
+    font-size: 28px;
+    color: #eeeeee;
+    text-align: center;
+}
+
+.descricao p{
+    color: #f4f4f4;
+    margin-left: 15px;
+    margin-top: 10px;
     font-size: 18px;
 }
+
+.tecnologias{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 20px;
+}
+
+.tecnologias img{
+    height: auto;
+    max-width: 300px;
+    width: 44px;
+  
+}
+
+.buttons-projeto{
+    margin-top:40px ;
+    max-width: 100%;
+    justify-content: center;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.buttons-projeto button{
+    width: 200px;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    background-color: #1649ff;
+    color: #f4f4f4;
+}
+/* Fim Projetos */

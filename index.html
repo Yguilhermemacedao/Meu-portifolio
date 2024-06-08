@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="assets/css/Header/cabecalho.css">
     <!-- Estilização do conteúdo principal -->
      <link rel="stylesheet" href="assets/css/Main/main.css">
+    <!-- Estilização do Rodapé -->
+     <link rel="stylesheet" href="assets/css/Footer/footer.css">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -24,11 +26,7 @@
 
         <nav id="menu">
             <!-- Menu hambúrguer -->
-            <div class="burger-icon" onclick="openMenu()">
-                <label class="burger" for="burger">
-                  <input class="line" type="checkbox" id="burger"/>
-                </label>
-              </div>
+           <button id="btn-menu"><i class='bx bx-menu'></i></button>
             <!-- Fim Menu Hambúrguer -->
             <ul class="menu-lista">
                 <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
@@ -58,15 +56,15 @@
             </article>
             <!-- Botões de acesso para redes sociais e documento -->
             <div class="buttons-media">
-                <a href="#"><button>GitHub <i class='bx bxl-github'></i></button></a>
-                <a href="#"><button>Linkedin <i class='bx bxl-linkedin-square' ></i></button></a>
-                <a href="#"><button>Baixar CV <img src="assets/img/currículo.png" alt="ícone de currículo virtual"></button></a>
+                <a href="#"><button class="btn-github">GitHub <i class='bx bxl-github'></i></button></a>
+                <a href="#"><button  class="btn-linkedin">Linkedin <i class='bx bxl-linkedin-square' ></i></button></a>
+                <a href="#"><button class="btn-cv">Baixar CV <img src="assets/img/currículo.png" alt="ícone de currículo virtual"></button></a>
             </div>
         </section>
         <!-- Fim Sobre -->
         <!-- Habilidades/Soft Skills -->
         <section id="skills">
-            <div class="habilidades">
+           
                 <h2>Habilidades</h2>
                 <div class="skills-container">
                     <ul>
@@ -76,10 +74,9 @@
                         <li><i class='bx bxl-sass' ></i></li>
                         <li><i class='bx bxl-react' ></i></li>
                         <li><i class='bx bxl-typescript' ></i></li>
-                        <li>Design UX/UI</li>
+                        <li class="gradient-text">Design UX/UI</li>
                     </ul>
                 </div>
-            </div>
         </section>
         <!-- Fim Habilidades/Soft Skills -->
         <!-- Projetos -->
@@ -90,10 +87,10 @@
                 <div class="container-projetos">
                     <!-- Landing Page PCR -->
                     <div class="projeto">
-                        <img src="assets/img/pcr-page.png" alt="Landing Page de PCR Marcas e Patentes">
+                        <img src="assets/img/pcr-page.png" alt="Landing Page de PCR Marcas e Patentes" class="img-projeto">
                         <!-- Descrição do projeto -->
                         <div class="descricao">
-                            <h3>PCR Marcas & Patentes</h3>
+                            <h3><strong style="color: #969696;">PCR</strong> <strong style="color: #c51a32;">Marcas</strong> & Patentes</h3>
                             <p>Com um design objetivo e sucinto, a página institucional da PCR Marcas & Patentes, traz o profissionalismo realista de seu trabalho. A página está adaptada para dispositivos móveis até desktop.</p>
                             <p>Tecnologias:</p>
                             <!-- Tecnologias -->
@@ -113,15 +110,16 @@
                 <!-- Fim projeto 1 -->
                 <!-- Yupi Commerce -->
                 <div class="projeto">
-                    <img src="assets/img/yupi-page.png" alt="Landin Page da Yupi Commerce"/>
+                    <img src="assets/img/yupi-page.png" alt="Landin Page da Yupi Commerce" class="img-projeto" />
                     <!-- Descrição do projeto -->
                     <div class="descricao">
-                        <h3>Yupi Commerce</h3>
+                        <h3><strong style="color: #451e82;">Yupi</strong> Commerce</h3>
                         <p>Esta landing page feita para a Yupi Commerce, com foco  em um plano de consultoria para marketplace. Projeto esta responsivo com um design agradável, intergrado API Rest.</p>
                         <p>Tecnologias:</p>
                         <div class="tecnologias">
                             <img src="assets/img/html-5.png" alt="Html ícone">
                             <img src="assets/img/css-3.png" alt="Css ícone">
+                            <img src="assets/img/js.png" alt="Icone Javascript">
                         </div>
                         <!-- Botões de acesso para o projeto -->
                         <div class="buttons-projeto">
@@ -139,7 +137,7 @@
     <footer>
         <!-- Formulário de contato -->
         <div class="formulario">
-            <h2>Contate-me e Transforme Seus Projetos em Realidade!</h2>
+            <h2><strong style="color: #1649ff;">Contate-me</strong> e Transforme Seus Projetos em <strong style="color: #1649ff;">Realidade</strong>!</h2>
             <form action="#">
                 <div>
                     <label for="nome">Nome</label>
@@ -169,7 +167,6 @@
                 <a href="#"><i class='bx bxl-instagram' ></i></a>
             </div>
         </div>
-        <p>Design e página criado por Guilherme <strong class="texto-azul">Macedo</strong></p>
     </footer>
     <script src="assets/js/script.js"></script>
 </body>
