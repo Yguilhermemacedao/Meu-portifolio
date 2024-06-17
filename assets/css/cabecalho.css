@@ -1,0 +1,62 @@
+/* Cores */
+:root{
+    --azul: #1649ff;
+    --cinza:#545454;
+    --preto:#424242;
+    --branco:#f4f4f4;
+}
+
+header{
+    padding: 20px;
+    max-width: 100%;
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    height: 64px;
+    width: 64px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #1649ff;
+    background:url(/assets/img/iconee.png) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-menu{
+    height: 64px;
+    width: 64px;
+    font-size: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #545454;
+}
+
+.menu-lista{
+    position: absolute;
+    top: 101px;
+    left: 0;
+    height: 280px;
+    width: 100%;
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+.menu-lista > .menu-item > .menu-link{
+    font-size: 24px;
+    color: #545454;
+}

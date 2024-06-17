@@ -12,9 +12,9 @@
     <!-- Folhas de Estilos -->
     <link rel="stylesheet" href="assets/css/estilo-global/style.css">
     <!-- Estilização do Cabecalho -->
-    <link rel="stylesheet" href="assets/css/Header/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/cabecalho.css">
     <!-- Estilização do conteúdo principal -->
-     <link rel="stylesheet" href="assets/css/Main/main.css">
+     <link rel="stylesheet" href="assets/css/main.css">
     <!-- Estilização do Rodapé -->
      <link rel="stylesheet" href="assets/css/Footer/footer.css">
 </head>
@@ -26,32 +26,7 @@
 
         <nav id="menu">
             <!-- Menu hambúrguer -->
-            <div class="hamburger">
-                <input class="checkbox" type="checkbox" />
-                <svg fill="none" viewBox="0 0 50 50" height="50" width="50">
-                  <path
-                    class="lineTop line"
-                    stroke-linecap="round"
-                    stroke-width="4"
-                    stroke="black"
-                    d="M6 11L44 11"
-                  ></path>
-                  <path
-                    stroke-linecap="round"
-                    stroke-width="4"
-                    stroke="black"
-                    d="M6 24H43"
-                    class="lineMid line"
-                  ></path>
-                  <path
-                    stroke-linecap="round"
-                    stroke-width="4"
-                    stroke="black"
-                    d="M6 37H43"
-                    class="lineBottom line"
-                  ></path>
-                </svg>
-              </div>              
+            <button id="btn-menu"><i class='bx bx-menu' style='color:#3d3d3d'  ></i></button>          
             <!-- Fim Menu Hambúrguer -->
             <ul class="menu-lista">
                 <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
@@ -67,22 +42,30 @@
             <div class="image-destaque"></div>
             <div class="texto-home">
                 <h1>Olá eu sou o Guilherme <strong class="texto-azul">Macedo</strong></h1>
-                <p>Desenvolvedor Front End</p>
-
-                <a href="#sobre"><button class="button-interacao">Explorar</button></a>
+                <p style="color: #3d3d3d; font-size: 20px;">Desenvolvedor Front End</p>
+                <p>Bem-vindo ao meu portfólio! Sou um desenvolvedor front-end especializado em criar interfaces elegantes e funcionais. Confira meus trabalhos e descubra mais sobre o que eu faço.</p>
+                <div class="buttons-social-media">
+                    <a href="#"><button class="btn-github">GitHub <i class='bx bxl-github'></i></button></a>
+                    <a href="#"><button  class="btn-linkedin">Linkedin <i class='bx bxl-linkedin-square' ></i></button></a>
+                </div>
             </div>
+           
+          
         </section>
+        
+        
         <!-- Fim Seção Home -->
         <!-- Seção Sobre -->
         <section id="sobre">
+            <div class="img-perfil"></div>
             <article>
                 <h1>Sobre mim</h1>
+                <span class="msg" style="color: #f1f1f1; font-weight: 600; text-align: center;">Conheça um pouco sobre mim:</span>
                 <p>Saudações me chamo Guilherme e este é o meu portifólio, onde mostrarei todos os meus projetos e conhecimentos que realizei ao longo do meu processo de evolução em minha carreira como Desenvolvedor Front End.</p>
             </article>
             <!-- Botões de acesso para redes sociais e documento -->
             <div class="buttons-media">
-                <a href="#"><button class="btn-github">GitHub <i class='bx bxl-github'></i></button></a>
-                <a href="#"><button  class="btn-linkedin">Linkedin <i class='bx bxl-linkedin-square' ></i></button></a>
+                
                 <a href="#"><button class="btn-cv">Baixar CV <img src="assets/img/currículo.png" alt="ícone de currículo virtual"></button></a>
             </div>
         </section>
